@@ -49,15 +49,15 @@ footer .logo{
 
 nav .logo a,
 footer .logo a{
-    margin-left: 8px;
+    margin-left: 10px;
     font-weight: bold;
     font-size: 20px;
 }
 
 nav .logo img,
 footer .logo img{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 50px;
 }
 
 nav ul,
@@ -80,6 +80,7 @@ nav button:hover{
     background-color: #5e3bee;
     border-color: #5e3bee;
     color: #fff;
+    transform: scale(1.05);
 }
 
 nav button#menuButton{
@@ -165,6 +166,7 @@ nav button#menuButton{
 
 .skills .skill-items .item:hover{
     border-color: #5e3bee;
+    transform: scale(1.05);
 }
 
 .skills .skill-items .item .icon{
@@ -263,6 +265,7 @@ nav button#menuButton{
 
 .portfolio .portfo-items .item:hover{
     border-color: #5e3bee;
+    transform: scale(1.05);
 }
 
 .portfolio .portfo-items .item img{
@@ -323,6 +326,7 @@ nav button#menuButton{
 
 .feedback .customers .item:hover{
     border-color: #5e3bee;
+    transform: scale(1.05);
 }
 
 .feedback .customers .item p{
