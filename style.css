@@ -75,6 +75,9 @@ nav button{
     border: 1px solid #1c1e53;
     cursor: pointer;
     transition: all 0.3s ease;
+    transform: scale(1.15);
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #070707;
 }
 
 nav button:hover{
@@ -131,6 +134,8 @@ nav button#menuButton{
     padding: 14px 24px;
     border: 1px solid transparent;
     border-radius: 5px;
+    transform: scale(1.05);
+    box-shadow: #070707;
 }
 
 .main .right img{
@@ -418,7 +423,7 @@ form input{
     outline: 0;
     padding: 20px 15px;
     border-radius: 15px;
-    color: rgb(2, 2, 2);
+    color: rgb(12, 12, 12);
     font-size: 18px;
 }
 
@@ -429,7 +434,7 @@ form textarea{
     outline: 0;
     padding: 56px 15px;
     border-radius: 15px;
-    color:rgb(2, 2, 2);
+    color: #fff;
     font-size: 15px;
     resize: none;
 }
@@ -442,60 +447,16 @@ form .btn-enviar{
 form .btn-enviar input{
     width: 120px;
     background-color: rgb(108, 33, 228);
-    color: #000;
+    color: #ffffff;
     font-weight: 700;
     cursor: pointer;
 }
 
 form .btn-enviar input:hover{
      transform: scale(1.05);
-     box-shadow: 0px 0px 8px rgb(117, 45, 177);
-}
-
-.contato{
-    background-color: #deebee;
-    padding: 90px 85px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.contato .left{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-.contato .left h3{
-    margin-top: 1px;
-    font-weight: bold;
-    font-size: 46px;
-}
-
-.contato .left h3 span{
-    color: #5e3bee
-}
-
-.contato .left p{
-    color: #1c1e53;
-    font-size: 22px;
-    margin-top: 20px;
-}
-
-.contato .left button{
-    margin-top: 40px;
-    color: #fff;
-    cursor: pointer;
-    background-color: #5e3bee;
-    padding: 14px 24px;
-    border: 1px solid transparent;
-    border-radius: 5px;
-}
-
-.contato .right img{
-    width: 500px;
-    border-radius: 45px;
+     cursor: pointer;
+     transition: calc(1.05);
+     box-shadow: 0px 0px 8px #070707;
 }
 
 @media screen and (max-width: 1200px) {
