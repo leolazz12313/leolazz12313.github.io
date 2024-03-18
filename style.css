@@ -434,7 +434,7 @@ form textarea{
     outline: 0;
     padding: 56px 15px;
     border-radius: 15px;
-    color: #fff;
+    color: rgb(12, 12, 12);
     font-size: 15px;
     resize: none;
 }
