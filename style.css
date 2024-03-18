@@ -412,7 +412,7 @@ form{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     margin-top: 40px;
 }
 
