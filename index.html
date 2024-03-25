@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>Leonardo Lazzareschi | Site</title>
+    <title>DevLeonardo | Site</title>
 </head>
 
 <body>
@@ -24,7 +24,8 @@
             <li><a href="#portfolio">Portifólio</a></li>
             <li><a href="#feedback">Feedbacks</a></li>
         </ul>
-          <button>Meu Contato
+         
+        <button>Meu Contato
           </button>
         <button id="menuButton" onclick="openMenu()">
         <i class='bx bx-menu'></i>
@@ -36,9 +37,23 @@
             <h5>Olá, eu sou</h5>
             <h3>Leonardo <span>Lazzareschi</span>
             <p>
-                Programador & Designer
+               <h2><span class="multiText"></span></h3>
             </p>
-            <button>Saiba Mais</button> 
+
+
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script>
+                var typingEffect = new Typed('.multiText', {
+                  strings: [
+                    "Desenvolvedor de Softwares",
+                    "Designer Web",
+                  ],
+                  typeSpeed: 75,
+                  backSpeed: 110,
+                  loop: true
+                });
+              </script>
+
         </div>
         <div class="right">
             <img src="https://media.discordapp.net/attachments/1043254114391425115/1219037628574208130/Imagem_do_WhatsApp_de_2023-12-20_as_00.39.17_1f5c34e2.jpg?ex=6609d843&is=65f76343&hm=28c69de2e5d5063d40671ec206f0a2c01fd4a58626a93aac2acc15fa3816eb82&=&format=webp&width=647&height=485">
@@ -109,7 +124,7 @@
                     <p>
                      Meus códigos que programo, HTML, CSS, JS And Python.
                     </p>
-                    <a href="#">Visite minhas redes sociais <i class='bx bx-link-external'></i></a>
+                    <a href="#">  <i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="item">
@@ -271,9 +286,6 @@
         </div>
         <div class="separator"></div>
         <div class="bottom">
-            <p>
-                Feito por ❤️ Leonardo
-            </p>
             <div class="links">
                 <a href="#">Política de Privacidade</a>
                 <a href="#">Termos de Serviços</a>
@@ -282,6 +294,12 @@
         </div>
     </footer>
     <div class="container">
+
+            <!-- Animação Home -->
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+    
+
         <script src="https://smtpjs.com/v3/smtp.js">
         </script>
         
