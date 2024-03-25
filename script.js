@@ -13,3 +13,10 @@ const sr = ScrollReveal ({
 sr.reveal('.left', {delay:200, origin:'top'});
 sr.reveal('.right', {delay:450, origin:'top'});
 sr.reveal('.logo', {delay:550, origin:'left'});
+
+function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  }
