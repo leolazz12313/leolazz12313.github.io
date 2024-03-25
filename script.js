@@ -7,7 +7,7 @@ const sr = ScrollReveal ({
          distance: '65px',
          duration: 2600,
          delay: 450,
-         reset: false
+         reset: true
 });
 
 sr.reveal('.left', {delay:200, origin:'top'});
