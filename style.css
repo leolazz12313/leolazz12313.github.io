@@ -452,6 +452,7 @@ form .btn-enviar input{
     color: #ffffff;
     font-weight: 700;
     cursor: pointer;
+    
 }
 
 form .btn-enviar input:hover{
@@ -459,6 +460,18 @@ form .btn-enviar input:hover{
      cursor: pointer;
      transition: calc(1.05);
      box-shadow: 0px 0px 8px #070707;
+     nav button{
+        color: #1c1e53;
+        background-color: transparent;
+        padding: 12px 16px;
+        border-radius: 5px;
+        border: 1px solid #1c1e53;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        transform: scale(1.15);
+        cursor: pointer;
+        box-shadow: 0px 0px 8px #070707;
+    }    
 }
 
 form .teste input:hover{
