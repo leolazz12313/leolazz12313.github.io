@@ -1,50 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>DevLeonardo | Site</title>
-</head>
-
-<body>
-
-    <nav>
-        <div class="logo">
-            <img src="https://media.discordapp.net/attachments/1043254114391425115/1219379622827921489/HBJgAE2ACTKASCLDAqIRZ5jEyASbABJgAEygzARYYZQbOp2MCTIAJMAEmUAkEWGBUwizzGJkAE2ACTIAJlJkAC4wyAfTMQEmwASYABOoBAIsMCphlnmMTIAJMAEmwATKTIAFRpmB8mYABNgAkyACVQCARYYlTDLPEYmwASYABNgAmUmwAKjzMD5dEyACTABJsAEKoEAC4xKmGUeIxNgAkyACTCBMhNggVFm4Hw6JsAEmAATYAKVQIAFRiXMMoRCTABJsAEmECZCbDAKDNwPh0TYAJMgAkwgUog8P8DuPvUh6Ll4AAAAAASUVORK5CYII.png?ex=661d8bc5&is=660b16c5&hm=79b56020d3aa0619ce07812572cd78d1264b88ea26046b02db1393b4259618fd&=&format=webp&quality=lossless&width=482&height=419">
-            <a href="" target="_blank">Leonardo</a>
-        </div>
-        <ul>
-            <li><a href="#main">Início</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#portfolio">Portifólio</a></li>
-            <li><a href="#feedback">Feedbacks</a></li>
-            <li><a href="#contato"></a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevLeo | Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Leonardo</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre Mim</a></li>
+          <li><a href="#experience">Experiências</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
-         
-        <button>Meu Contato
-          </button>
-          <button id="menuButton" onclick="openMenu()">
-            <i class='bx bx-menu'></i>
-        </button>
+      </div>
     </nav>
-
-    <div class="main" id="main">
-        <div class="left">
-            <h5>Olá, eu sou</h5>
-            <h3>Leonardo <span>Lazzareschi</span>
-            <p>
-               <h2><span class="multiText"></span></h3>
-            </p>
-
-
-            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <nav id="hamburger-nav">
+      <div class="logo">Leonardo Lazzareschi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre Mim</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./Captura de tela 2024-04-07 215154.png" alt="Foto do perfil de Leonardo" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, me chamo</p>
+        <h1 class="title">Leonardo Lazzareschi</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
             <script>
-                var typingEffect = new Typed('.multiText', {
+                var typingEffect = new Typed('.section__text__p2', {
                   strings: [
                     "Desenvolvedor de Softwares",
                     "Designer Web",
@@ -54,229 +56,302 @@
                   loop: true
                 });
               </script>
-
+              </script>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='./#projects'">
+            Projetos
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contato
+          </button>
         </div>
-        <div class="right">
-            <img src="https://media.discordapp.net/attachments/1043254114391425115/1219037628574208130/Imagem_do_WhatsApp_de_2023-12-20_as_00.39.17_1f5c34e2.jpg?ex=661c4d43&is=6609d843&hm=a32a61c809a9a66c9a15b74355876a96623b4c44258d9cc121a0a30335399677&=&format=webp&width=647&height=485">
+          <img
+            src="./github.png"
+            alt="Meu Perfil do Github"
+            class="icon"
+            onclick="location.href='https://github.com/leolazz12313"
+          />
         </div>
-    </div>
-
-    <div class="skills" id="skills">
-        <h5>Minhas Habilidades</h5>
-        <h3>Experiências</h3>
-        <div class="skill-items">
-            <div class="item">
-                <div class="icon"><i class='bx bx-directions'></i></div>
-                <h4>Estratégia</h4>
-                <p>
-                  Desenvolvemos uma estratégia digital abrangente para maximizar o alcance e o impacto do projeto.
-                </p>
-            </div>
-            <div class="item">
-                <div class="icon"><i class='bx bx-bookmark-heart'></i></div>
-                <h4>Marca e logotipo</h4>
-                <p>
-                  Criamos um logotipo distintivo que representa fielmente a identidade e os valores da marca.
-                </p>
-            </div>
-            <div class="item">
-                <div class="icon"><i class='bx bxl-figma'></i></i></div>
-                <h4>Design de UI e UX</h4>
-                <p>
-                  Priorizamos o design de interface e experiência do usuário para garantir uma interação intuitiva e cativante com o site.
-                </p>
-            </div>
-            <div class="item">
-                <div class="icon"><i class='bx bx-code-alt'></i></i></div>
-                <h4>Codificação de fluxo da Web</h4>
-                <p>
-                  Implementamos uma codificação eficiente e fluida para otimizar o desempenho e a funcionalidade do site.
-                </p>
-            </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Conheça mais</p>
+      <h1 class="title">Sobre Mim</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./Captura de tela 2024-04-07 215154.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-    </div>
-
-    <div class="about" id="about">
-        <div class="left">
-            <img src="https://media.discordapp.net/attachments/1043254114391425115/1219037628574208130/Imagem_do_WhatsApp_de_2023-12-20_as_00.39.17_1f5c34e2.jpg?ex=661c4d43&is=6609d843&hm=a32a61c809a9a66c9a15b74355876a96623b4c44258d9cc121a0a30335399677&=&format=webp&width=647&height=485">
-        </div>
-        <div class="right">
-            <h5></h5>
-            <h3>Sobre mim</h3>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiência</h3>
+              <p>5+ meses <br />Frontend Development</p>
+            </div>
+            
+            
+          <div class="text-container">
             <p>
-                Olá, eu sou Leonardo Lazzareschi. Desenvolvedor de Programação avançada, atualmente minha base é em São Paulo, Brasil 📌
+              Olá, eu sou Leonardo Lazzareschi. Desenvolvedor de Programação avançada, atualmente minha base é em São Paulo, Brasil 📌
             </p>
+          </div>
         </div>
-    </div>
-
-    <div class="portfolio" id="portfolio">
-        <div class="header">
-            <div class="info">
-                <h5>Projetos Recentes</h5>
-                <h3>Meu Portifólio</h3>
-            </div>   
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explorar minhas</p>
+      <h1 class="title">Experiencias</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Desenvolvimento Frontend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./png-transparent-html5-computer-icons-others-angle-text-rectangle-removebg-preview.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experiência</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./css3-02_icon-icons.com_50917.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experiência</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./png-transparent-javascript-computer-icons-programming-language-world-wide-web-text-logo-monochrome-removebg-preview.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./download (2).png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./download (3).png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Desenvolvimento Frontend</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./2181.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./download.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./download.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-
-        <div class="portfo-items">
-            <div class="item">
-                <img src="https://media.discordapp.net/attachments/1043254114391425115/1224851554209632357/2756243-cloud-technology-background-cloud-computing-cloud-storage-sign-with-two-keys-up-and-down-icon-made-with-binary-code-digital-binary-data-and-streaming-digital-codigo-vetor.png?ex=661efee7&is=660c89e7&hm=841b57723ee260e1160d439e62dd9717b308682b106324f1b350b833af4414e9&=&format=webp&quality=lossless&width=1022&height=575">
-                <div class="info">
-                    <h4>Códigos</h4>
-                    <p>
-                     Meus códigos que programo, HTML, CSS, JS And Python.
-                    </p>
-                    <a href="#about">  <i class='bx bx-link-external'></i></a>
-                </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Navegar em meus recentes</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Projeto 1"
+                class="project-img"
+              />
             </div>
-            <div class="item">
-                <img src="https://media.discordapp.net/attachments/1043254114391425115/1224851505153314816/4695781-programacao-codigo-codificacao-ou-hacker-fundo-programacao-codigo-icone-feito-com-codigo-binario-digital-dados-binarios-e-streaming-codigo-digital-matriz-fundo-com-digitos-1-ilustracaoial-0-vetor.png?ex=661efedb&is=660c89db&hm=bcc55924b5a34a39e7ed1c03aa482d6681ab7375359e8ae6100ee762a46e0dcb&=&format=webp&quality=lossless&width=1022&height=575">
-                <div class="info">
-                    <h4>Blog simples de página</h4>
-                    <p>
-                     Páginas atualizadas e otimizas para melhores experiências.
-                    </p>
-                    <a href="#feedback"><i class='bx bx-link-external'></i></a>
-                </div>
+            <h2 class="experience-sub-title project-title">Projeto Um</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
             </div>
-            <div class="item">
-                <img src="https://media.discordapp.net/attachments/1043254114391425115/1224851155281252483/1410877-banner-de-programacao-e-codificacao-futurista-vetor.png?ex=661efe88&is=660c8988&hm=f3ce5a973410b87bfa2a39b2cae318f6efafca43e094f08e02f14a267e940ba7&=&format=webp&quality=lossless&width=1022&height=575">
-                <div class="info">
-                    <h4>Nav animado</h4>
-                    <p>
-                     Págias animas são o essencial para que um site possa funcionar com sua total funcionalidade.
-                    </p>
-                    <a href="#main"><i class='bx bx-link-external'></i></a>
-                </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Projeto 2"
+                class="project-img"
+              />
             </div>
+            <h2 class="experience-sub-title project-title">Projeto Dois</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Projeto 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Projeto Três</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
-
-    </div>
-
-    <div class="feedback" id="feedback">
-        <h3>Feedbacks</h3>
-        <div class="customers">
-            <div class="item">
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                </div>
-                <p>
-                  "O design do site do Leonardo é moderno e intuitivo, facilitando a navegação pelo conteúdo."
-
-                </p>
-                <div class="user">
-                    <img src="https://media.discordapp.net/attachments/1043254114391425115/1224851955076305029/us-1.jpg?ex=661eff46&is=660c8a46&hm=0ca56488ea04315a4916d43a302f03dc1384d5a28b191f65f36f9997c7f6bc9e&=&format=webp&width=435&height=653">
-                    <div class="info">
-                        <h5>Dianne Russell</h5>
-                        <p>Starbucks</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                </div>
-                <p>
-                  "A organização do conteúdo no site do Leonardo é clara e bem estruturada, tornando fácil encontrar informações específicas."
-               </p>
-                <div class="user">
-                    <img src="https://media.discordapp.net/attachments/1043254114391425115/1224851956141527130/us-2.jpg?ex=661eff46&is=660c8a46&hm=f03aef01650f3550e5633153e2bed901f2235da00789b623560bbb357e181e02&=&format=webp&width=1022&height=593">
-                    <div class="info">
-                        <h5>Kristian Watson</h5>
-                        <p>Louis Vuitton</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="rating">
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                    <i class='bx bxs-star'></i>
-                </div>
-                <p>
-                  "A experiência de usuário no site do Leonardo é agradável, com carregamento rápido e compatibilidade com dispositivos móveis."                </p>
-                <div class="user">
-                    <img src="https://media.discordapp.net/attachments/1043254114391425115/1224851957156544594/us-3.jpg?ex=661eff47&is=660c8a47&hm=52660f7777b8b79a52033c9855b2a4dd8b9e1b98418088178d201556e499b43f&=&format=webp&width=980&height=653">
-                    <div class="info">
-                        <h5>Kathryn Murphy</h5>
-                        <p>McDonald's</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Entrar em contato</p>
+      <h1 class="title">Fale Comigo</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:site9094@gmail.com">site9094@gmail.com</a></p>
         </div>
-    </div>
-
-     <section class="formulario">
-        <div class="contato" id="contato">
-            <div class="left">
-                    <h5></h5>
-                    <h3>FALE <span>COMIGO</span>
-                    <p>
-                        Preencher o formulário abaixo.
-                    
-                    </p>
-
-                    <form action="https://formsubmit.co/site9094@gmail.com" method="POST">
-                        <input type="text" name="Nome" required placeholder="Nome completo" >
-                        <input type="email" name="Email" required placeholder="Seu Email" >
-                        <input type="text" name="Telefone" required placeholder="Seu telefone">
-                        <textarea name="Mensagem"placeholder="Sua Mensagem" required></textarea>
-                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                        </script>
-
-
-          </form>
-          </form>
-         </div>
-     </section>
+        <div class="contact-info-container">
+        </div>
+      </div>
+    </section>
     <footer>
-        <div class="top">
-            <div class="logo">
-                <img src="https://media.discordapp.net/attachments/1043254114391425115/1219379622827921489/HBJgAE2ACTKASCLDAqIRZ5jEyASbABJgAEygzARYYZQbOp2MCTIAJMAEmUAkEWGBUwizzGJkAE2ACTIAJlJkAC4wyAfTMQEmwASYABOoBAIsMCphlnmMTIAJMAEmwATKTIAFRpmB8mYABNgAkyACVQCARYYlTDLPEYmwASYABNgAmUmwAKjzMD5dEyACTABJsAEKoEAC4xKmGUeIxNgAkyACTCBMhNggVFm4Hw6JsAEmAATYAKVQIAFRiXMMoRCTABJsAEmECZCbDAKDNwPh0TYAJMgAkwgUog8P8DuPvUh6Ll4AAAAAASUVORK5CYII.png?ex=661d8bc5&is=660b16c5&hm=79b56020d3aa0619ce07812572cd78d1264b88ea26046b02db1393b4259618fd&=&format=webp&quality=lossless&width=482&height=419">                <a href="#">Leonardo Lazzareschi</a>
-            </div>
-        <ul>
-            <li><a href="#main">Início</a></li>
-            <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#portfolio">Portifólio</a></li>
-            <li><a href="#feedback">Feedbacks</a></li>
-        </ul>
-            <div class="social-links">
-                <a href="#"><i class='bx bxl-'></i></a>
-                <a href="#"><i class='bx bxl-'></i></a>
-                <a href="#"><i class='bx bxl-'></i></a>
-                <a href="#"><i class='bx bxl--square'></i></a>
-            </div>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#experience">Experiencias</a></li>
+            <li><a href="#projects">Proejtos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
         </div>
-        <div class="separator"></div>
-        <div class="bottom">
-            <div class="links">
-                <a href="#">Política de Privacidade</a>
-                <a href="#">Termos de Serviços</a>
-                <a href="#">Configurações de Cookies</a>
-            </div>
-        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Leonardo Lazzareschi. Todos os Direitos Reservados.</p>
     </footer>
-    <div class="container">
-
-            <!-- Animação Home -->
-
-        <script src="https://unpkg.com/scrollreveal"></script>
-    
-
-        <script src="https://smtpjs.com/v3/smtp.js">
-        </script>
-        
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
