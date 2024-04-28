@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+.skill-card {
+
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card i {
+    font-size: 3rem;
+}
+
+.skill-card p {
+    margin-top: 0.5rem;
+}
+
+.percentage {
+    font-weight: bold;
+}
+
+.percentage.experienced {
+    color: #4CAF50; /* Verde */
+}
+
+.percentage.intermediate {
+    color: #FFC107; /* Amarelo */
+}
+
+.percentage.apprentice {
+    color: #F44336; /* Vermelho */
+}
+/* Estilo para os cards de projetos */
+.project-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    margin-top: 0.5rem;
+}
+#notificacao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6EE7B7;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    width: auto;
+    max-width: 10%; /* Definindo o máximo de largura para 10% */
+    overflow: hidden;
+}
+
+#notificacao.fade-out {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+#fechar-notificacao {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#notificacao-progresso {
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: width 5s linear;
+}
+#notificacao-progresso {
+    height: 4px; /* Altura da barra de progresso */
+    background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo da barra de progresso */
+    position: absolute; /* Posicionamento absoluto */
+    bottom: 0; /* Alinhamento inferior */
+    left: 0; /* Alinhamento à esquerda */
+    width: 100%; /* Largura inicial da barra de progresso */
+    transition: width 5s linear; /* Transição da largura */
+}
+#notificacao {
+    position: fixed;
+    bottom: 40px; /* Posição ajustada para ficar mais acima */
+    right: 20px;
+    background-color: #6EE7B7;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aumentando o box-shadow */
+    z-index: 999;
+    width: auto;
+    max-width: 20%; /* Ajustando a largura máxima */
+    overflow: hidden;
+    font-size: 0.875rem;
+}
+
+#notificacao.fade-out {
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+#fechar-notificacao {
+    position: absolute;
+    top: 5px; /* Ajustando a posição para cima */
+    right: 5px; /* Ajustando a posição para a direita */
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo do botão */
+    border-radius: 50%; /* Transformando em círculo */
+    padding: 3px; /* Aumentando o espaço interno */
+}
+
+#notificacao-progresso {
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Definindo a largura inicial como 100% */
+    transition: width 5s linear; /* Ajustando a transição para começar após a notificação ser exibida */
+}
+textarea {
+    resize: none; /* Impede o redimensionamento do textarea */
+    min-height: 200px; /* Altura mínima do textarea */
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+footer {
+    height: 6vh;
+    margin: 0 1rem;
+  }
+  
+  footer p {
+    text-align: center;
+  }

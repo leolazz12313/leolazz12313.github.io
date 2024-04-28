@@ -1,359 +1,318 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portifólio | Lazza</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Leonardo</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">Sobre Mim</a></li>
-          <li><a href="#experience">Experiências</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Leonardo Lazzareschi</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Sobre Mim</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./Imagem_do_WhatsApp_de_2023-12-20_as_00.39.17_1f5c34e2.png" alt="Foto do perfil de Leonardo" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Olá, me chamo</p>
-        <h1 class="title">Leonardo Lazzareschi</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-            <script>
-                var typingEffect = new Typed('.section__text__p2',{
-                  strings: [
-                    "Desenvolvedor de Softwares",
-                    "Designer Web", ],
-                  typeSpeed: 75,
-                  backSpeed: 110,
-                  loop: true
-                });
-              </script>
-              </script>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="location.href='./#projects'">
-            Projetos
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contato
-          </button>
-        </div>
-          <img
-            src="./github.png"
-            alt="Meu Perfil do Github"
-            class="icon"
-            onclick="location.href='https://github.com/leolazz12313'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Conheça mais</p>
-      <h1 class="title">Sobre Mim</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./Imagem_do_WhatsApp_de_2023-12-20_as_00.39.17_1f5c34e2.png"
-            alt="Foto do perfil de Leonardo"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experiência</h3>
-              <p>5+ meses <br />Desenvolvedor Frontend</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Lazza</title>
+    <!-- Adicione os estilos do Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Adicione os estilos de Animate.css para animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Adicione os estilos do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Adicione o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white py-4 px-6 md:px-0 text-center">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <h1 class="text-xl font-semibold text-center">Portifólio de Leonardo Lazzareschi</h1>
             </div>
-            
-            
-          <div class="text-container">
-            <p>
-              Olá, sou Leonardo Lazzareschi, um desenvolvedor apaixonado por programação avançada, com base aqui em São Paulo, Brasil. Desde que mergulhei no mundo da tecnologia, tenho buscado constantemente desafios que me permitam expandir meu conhecimento e habilidades. Com uma mente inquisitiva e determinada, estou sempre em busca de soluções inovadoras para os problemas mais complexos. São Paulo, com sua vibrante cena de tecnologia, oferece um ambiente inspirador para minha jornada de desenvolvimento. Estou comprometido em contribuir para o avanço da nossa comunidade de tecnologia e impulsionar o progresso através do poder do código.
-            </p>
-          </div>
+    </header>
+
+
+    <main class="container mx-auto py-8 px-4 md:px-0">
+        <!-- Seção de Introdução -->
+        <section id="intro" class="p-4 animate__animated animate__fadeIn">
+            <h2 class="text-3xl font-bold mb-4">Bem-vindo ao meu portfólio!</h2>
+            <p class="text-gray-700 mb-8">Sou um desenvolvedor Frontend apaixonado por criar experiências incríveis
+                na web.</p>
+        </section>
+
+
+<!-- Seção Sobre Mim -->
+<section id="about" class="mt-8">
+    <h5 class="text-sm font-semibold text-gray-400 mb-2 mt-8 text-center">Saiba mais</h5> <!-- Centralizando o título -->
+    <h1 class="text-4xl font-bold mb-6 text-center">Sobre Mim</h1>
+    <div class="container mx-auto max-w-7xl"> <!-- Adicionando classes para centralizar -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Seção Sobre Mim -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./Imagem_do_WhatsApp_de_2023-12-20_as_00.39.17_1f5c34e2.png" alt="Foto de Perfil"
+                    class="w-full h-56 object-cover object-center">
+                <div class="p-6 flex flex-col items-center">
+                    <h3 class="text-xl font-bold mb-2">Leonardo Lazzareschi</h3>
+                    <p class="section__text__p2">Frontend Developer</p>
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                    <script>
+                        var typingEffect = new Typed('.section__text__p2', {
+                            strings: [
+                                "Desenvolvedor de Softwares",
+                                "Designer Web",
+                            ],
+                            typeSpeed: 75,
+                            backSpeed: 110,
+                            loop: true
+                        });
+                    </script>
+                    <p class="text-gray-700 mt-4 text-center">Olá, sou Leonardo Lazzareschi, um desenvolvedor apaixonado por <strong>programação avançada</strong>, com base aqui em <strong>São Paulo, Brasil</strong>. Desde que mergulhei no mundo da tecnologia, tenho buscado constantemente desafios que me permitam expandir meu conhecimento e habilidades. Com uma mente inquisitiva e determinada, estou sempre em busca de soluções inovadoras para os problemas mais complexos. São Paulo, com sua <strong>vibrante cena de tecnologia</strong>, oferece um ambiente inspirador.
+                </div>
+            </div>
+            <!-- Seção Minha História -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./Imagem_do_WhatsApp_de_2023-12-20_as_00.39.17_1f5c34e2.png" alt="Imagem da Sua História"
+                    class="w-full h-56 object-cover object-center">
+                <div class="p-6 flex flex-col items-center">
+                    <h3 class="text-xl font-bold mb-2">Minha História</h3>
+                    <p class="text-gray-700 mt-4 text-center">Olá, sou <strong>Leonardo Lazzareschi</strong>, um desenvolvedor apaixonado por <strong>programação avançada</strong> aqui em <strong>São Paulo, Brasil</strong>. Desde minha entrada na tecnologia, busco incessantemente desafios para expandir meus conhecimentos. Em uma jornada que começou na universidade e floresceu em uma <strong>startup inovadora</strong>, encontrei-me envolvido em um projeto ambicioso de <strong>inteligência artificial para prever desastres naturais</strong>. Com uma equipe diversificada, enfrentamos <strong>obstáculos monumentais</strong> e, após meses de trabalho árduo, nossa tecnologia foi implementada globalmente, <strong>salvando vidas</strong> e moldando meu compromisso contínuo com <strong>soluções inovadoras</strong> para os <strong>problemas mais complexos</strong>.</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <img
-        src="./arrow.png"
-        alt="Logo flecha"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explorar minhas</p>
-      <h1 class="title">Experiencias</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Desenvolvimento Frontend</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./png-transparent-html5-computer-icons-others-angle-text-rectangle-removebg-preview.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experiência</p>
+    </div>
+</section>
+
+
+
+
+
+
+
+        <!-- Seção de Habilidades -->
+        <section id="skills" class="mt-8">
+            <h5 class="text-sm font-semibold text-gray-400 mb-2 mt-8 text-center">Meu Portfólio</h5> <!-- Centralizando o título -->
+            <h1 class="text-4xl font-bold mb-6 text-center">Habilidades</h1>
+            <ul class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <!-- Card de Habilidade: HTML -->
+                <li class="skill-card rounded shadow-md p-4 animate__animated animate__slideInUp transition duration-500 ease-in-out">
+                    <i class="fab fa-html5 text-5xl text-red-600 mb-2"></i>
+                    <h3 class="text-gray-700 font-bold text-xl mb-2">HTML</h3>
+                    <p class="text-gray-500">Experiente - <span class="percentage experienced">90%</span></p>
+                    <p class="text-gray-700 mt-2">Domínio avançado de HTML5, incluindo semântica, formulários, e APIs.
+                    </p>
+                    <p class="text-gray-700">Exemplos de projetos: Site pessoal, Landing Pages, Aplicações Web.</p>
+                </li>
+                <!-- Card de Habilidade: CSS -->
+                <li class="skill-card rounded shadow-md p-4 animate__animated animate__slideInUp transition duration-500 ease-in-out">
+                    <i class="fab fa-css3-alt text-5xl text-blue-600 mb-2"></i>
+                    <h3 class="text-gray-700 font-bold text-xl mb-2">CSS</h3>
+                    <p class="text-gray-500">Intermediário - <span class="percentage intermediate">70%</span></p>
+                    <p class="text-gray-700 mt-2">Conhecimento sólido em estilização e layout com CSS3 e preprocessadores
+                        como SASS.</p>
+                    <p class="text-gray-700">Exemplos de projetos: Páginas responsivas, Estilização avançada, Animações
+                        CSS.</p>
+                </li>
+                <!-- Card de Habilidade: JavaScript -->
+                <li class="skill-card rounded shadow-md p-4 animate__animated animate__slideInUp transition duration-500 ease-in-out">
+                    <i class="fab fa-js text-5xl text-yellow-600 mb-2"></i>
+                    <h3 class="text-gray-700 font-bold text-xl mb-2">JavaScript</h3>
+                    <p class="text-gray-500">Experiente - <span class="percentage experienced">85%</span></p>
+                    <p class="text-gray-700 mt-2">Ampla experiência em desenvolvimento frontend e backend com JavaScript,
+                        incluindo frameworks como React e Node.js.</p>
+                    <p class="text-gray-700">Exemplos de projetos: Single Page Applications, Aplicações Web em Tempo
+                        Real, APIs RESTful.</p>
+                </li>
+                <!-- Card de Habilidade: React -->
+                <li class="skill-card rounded shadow-md p-4 animate__animated animate__slideInUp transition duration-500 ease-in-out">
+                    <i class="fab fa-react text-5xl text-blue-400 mb-2"></i>
+                    <h3 class="text-gray-700 font-bold text-xl mb-2">React</h3>
+                    <p class="text-gray-500">Avançado - <span class="percentage experienced">80%</span></p>
+                    <p class="text-gray-700 mt-2">Experiência significativa no desenvolvimento de aplicações web
+                        utilizando React.js.</p>
+                    <p class="text-gray-700">Exemplos de projetos: Aplicações SPA complexas, Componentes reutilizáveis,
+                        Integração com APIs externas.</p>
+                </li>
+                <!-- Card de Habilidade: Tailwind CSS -->
+                <li class="skill-card rounded shadow-md p-4 animate__animated animate__slideInUp transition duration-500 ease-in-out">
+                    <i class="fab fa-css3 text-5xl text-blue-400 mb-2"></i>
+                    <h3 class="text-gray-700 font-bold text-xl mb-2">Tailwind CSS</h3>
+                    <p class="text-gray-500">Avançado - <span class="percentage experienced">85%</span></p>
+                    <p class="text-gray-700 mt-2">Proficiente no uso e personalização do Tailwind CSS para estilizar
+                        aplicações web.</p>
+                    <p class="text-gray-700">Exemplos de projetos: Sites responsivos, Interfaces de usuário modernas,
+                        Prototipagem rápida.</p>
+                </li>
+                <!-- Card de Habilidade: Bootstrap -->
+                <li class="skill-card rounded shadow-md p-4 animate__animated animate__slideInUp transition duration-500 ease-in-out">
+                    <i class="fab fa-bootstrap text-5xl text-purple-600 mb-2"></i>
+                    <h3 class="text-gray-700 font-bold text-xl mb-2">Bootstrap</h3>
+                    <p class="text-gray-500">Intermediário - <span class="percentage intermediate">55%</span></p>
+                    <p class="text-gray-700 mt-2">Conhecimento em usar Bootstrap para criar interfaces web
+                        responsivas.</p>
+                    <p class="text-gray-700">Exemplos de projetos: Sites corporativos, Dashboards administrativos,
+                        Aplicações web rápidas.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <div class="container mx-auto mt-8">
+        <h5 class="text-sm font-semibold text-gray-400 mb-2 mt-8 text-center">Meus Projetos</h5> <!-- Centralizando o título -->
+        <h1 class="text-4xl font-bold mb-6 text-center">Projetos</h1>
+        <div class="grid gap-6 md:grid-cols-2">
+            <!-- Card do Projeto 1 -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <img src="./project-1.png" alt="Projeto 1" class="w-full h-56 object-cover object-center">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Projeto 1</h2>
+                    <p class="text-gray-700 mb-4">Aplicativo de mensagens estilo conversa, inspirado em plataformas populares. Permite troca de mensagens em tempo real, criação de grupos e compartilhamento de mídias.</p>
+                    <div id="details1" class="hidden mt-4">
+                        <p>Informações adicionais sobre o <strong>Projeto 1</strong>.</p>
+                        <p>Mais detalhes podem ser adicionados aqui.</p>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./css3-02_icon-icons.com_50917.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experiência</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./download (5).png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediário</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./png-transparent-javascript-computer-icons-programming-language-world-wide-web-text-logo-monochrome-removebg-preview.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Básico</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./download (2).png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Básico</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./download (3).png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediário</p>
-                </div>
-              </article>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Desenvolvimento Frontend</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./2181.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Básico</p>
+            <!-- Card do Projeto 2 -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <img src="./project-2.png" alt="Projeto 2" class="w-full h-56 object-cover object-center">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Projeto 2</h2>
+                    <p class="text-gray-700 mb-4">Aplicativo de gerenciamento de notificações, permite aos usuários personalizar preferências e receber alertas em tempo real sobre eventos e atualizações.</p>
+                    <div id="details2" class="hidden mt-4">
+                        <p>Informações adicionais sobre o <strong>Projeto 2</strong>.</p>
+                        <p>Mais detalhes podem ser adicionados aqui.</p>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./download.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediário</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./download.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediário</p>
-                </div>
-              </article>
             </div>
-          </div>
+            <!-- Card do Projeto 3 -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <img src="./project-3.png" alt="Projeto 3" class="w-full h-56 object-cover object-center">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Projeto 3</h2>
+                    <p class="text-gray-700 mb-4">Plataforma de avaliação online, permite criação e administração de questionários personalizados, com análise de dados avançada.</p>
+                    <div id="details3" class="hidden mt-4">
+                        <p>Informações adicionais sobre o <strong>Projeto 3</strong>.</p>
+                        <p>Mais detalhes podem ser adicionados aqui.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card do Projeto 4 -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+                <img src="./15-doka-comunicacao-criacao-site-profissional-desenvolvimento.png" alt="Projeto 4" class="w-full h-56 object-cover object-center">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Projeto 4</h2>
+                    <p class="text-gray-700 mb-4">Aplicação versátil que combina funcionalidades de agenda e editor de vídeo, oferecendo uma solução completa para organização pessoal e produção de conteúdo digital.</p>
+                    <div id="details4" class="hidden mt-4">
+                        <p>Informações adicionais sobre o <strong>Projeto 4</strong>.</p>
+                        <p>Mais detalhes podem ser adicionados aqui.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Adicione mais cards conforme necessário -->
         </div>
-      </div>
-      <img
-        src="./arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Navegar em meus recentes</p>
-      <h1 class="title">Projetos</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./project-1.png"
-                alt="Projeto 1"
-                class="project-img"
-              />
+    </div>    
+    <div class="container mx-auto mt-8">
+        <h5 class="text-sm font-semibold text-gray-400 mb-2 mt-8 text-center">Meu Contato</h5> <!-- Centralizando o título -->
+        <h1 class="text-4xl font-bold mb-6 text-center">Contato</h1>
+        <input type="hidden" name="_captcha" value="false">
+       <form action="https://formsubmit.co/site9094@gmail.com" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" id="form-contato">
+
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                    Nome
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nome" type="text" placeholder="Nome">
+                <p id="nome-error" class="text-red-500 text-xs italic hidden">Por favor, preencha o seu nome, caso o erro persistir, coloque seu nome com letra <strong>maiúscula</strong></p>
             </div>
-            <h2 class="experience-sub-title project-title">Projeto Um</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/leolazz12313'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/leolazz12313'"
-              >
-                Live Demo
-              </button>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                    Email
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Email">
+                <p id="email-error" class="text-red-500 text-xs italic hidden">Por favor, preencha o seu email.</p>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./project-2.png"
-                alt="Projeto 2"
-                class="project-img"
-              />
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="mensagem">
+                    Mensagem
+                </label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="mensagem" placeholder="Digite sua mensagem" maxlength="2500"></textarea>
+                <p id="mensagem-error" class="text-red-500 text-xs italic hidden">Por favor, preencha a mensagem.</p>
+                <p id="mensagem-limit" class="text-gray-500 text-xs italic">2500 caracteres restantes.</p>
             </div>
-            <h2 class="experience-sub-title project-title">Projeto Dois</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/leolazz12313'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/leolazz12313'"
-              >
-                Live Demo
-              </button>
+            <div class="flex items-center justify-between">
+                <button id="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                    Enviar
+                </button>
+                <div id="notification" class="bg-green-500 text-white px-4 py-2 rounded-md shadow-md fixed bottom-4 right-4 hidden">
+                    Formulário enviado com sucesso!
+                </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./project-3.png"
-                alt="Projeto 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Projeto Três</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/leolazz12313'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/leolazz12313'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+        </form>
+    </div>
+        <footer>
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Leonardo Lazzareschi. Todos os direitos reservados.</p>
         </div>
-      </div>
-      <img
-        src="./arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Entrar em contato</p>
-      <h1 class="title">Fale Comigo</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:site9094@gmail.com">site9094@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">Sobre Mim</a></li>
-            <li><a href="#experience">Experiencias</a></li>
-            <li><a href="#projects">Proejtos</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Leonardo Lazzareschi. Todos os Direitos Reservados.</p>
     </footer>
-    <script src="script.js"></script>
-</script>
-    <script src="https://smtpjs.com/v3/smtp.js">
+    <!-- Adicione seus scripts JavaScript aqui -->
+    <script>
+         document.getElementById('mensagem').addEventListener('input', function() {
+        var caracteresRestantes = 2500 - this.value.length;
+        document.getElementById('mensagem-limit').textContent = caracteresRestantes + " caracteres restantes.";
+    });
+      document.getElementById('form-contato').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita o envio do formulário antes da validação
+
+        var nome = document.getElementById('nome').value;
+        var email = document.getElementById('email').value;
+        var mensagem = document.getElementById('mensagem').value;
+
+        if (!validateName(nome)) {
+            document.getElementById('nome-error').classList.remove('hidden');
+        } else {
+            document.getElementById('nome-error').classList.add('hidden');
+        }
+
+        if (!validateEmail(email)) {
+            document.getElementById('email-error').classList.remove('hidden');
+        } else {
+            document.getElementById('email-error').classList.add('hidden');
+        }
+
+        if (mensagem.trim() === "") {
+            document.getElementById('mensagem-error').classList.remove('hidden');
+        } else {
+            document.getElementById('mensagem-error').classList.add('hidden');
+        }
+
+        // Verifica se todos os campos são válidos antes de enviar o formulário
+        if (validateName(nome) && validateEmail(email) && mensagem.trim() !== "") {
+            // Simula o envio do formulário e exibe a notificação
+            simulateFormSubmission();
+        }
+    });
+
+    // Função para simular o envio do formulário e exibir a notificação de sucesso
+    function simulateFormSubmission() {
+        document.getElementById('form-contato').reset(); // Limpa os campos do formulário
+
+        var notification = document.getElementById('notification');
+        notification.classList.remove('hidden'); // Exibe a notificação
+
+        // Esconde a notificação após 3 segundos
+        setTimeout(function() {
+            notification.classList.add('hidden');
+        }, 3000);
+    }
+
+    // Função para validar o nome (mais de 3 caracteres e começa com letra maiúscula)
+    function validateName(name) {
+        var nameRegex = /^[A-Z][a-zA-Z]{2,}$/;
+        return nameRegex.test(name);
+    }
+
+    // Função para validar o email
+    function validateEmail(email) {
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+ src="https://smtpjs.com/v3/smtp.js"
     </script>
-  </body>
+
+</body>
+
 </html>
