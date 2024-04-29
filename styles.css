@@ -155,3 +155,27 @@ footer {
   footer p {
     text-align: center;
   }
+  .skill-card {
+    transition: transform 0.5s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+}
+.skill-card {
+    transition: transform 0.5s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.02);
+    transition: transform 1s ease-in-out;
+}
+.story-section {
+    transition: transform 0.5s ease-in-out;
+}
+
+.story-section:hover {
+    transform: scale(1.02);
+    transition: transform 1s ease-in-out;
+}
