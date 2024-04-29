@@ -175,3 +175,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Chamar a função para exibir a notificação
     // exibirNotificacao('Formulário enviado com sucesso!', true);
 });
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
