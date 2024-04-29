@@ -37,166 +37,181 @@
         </section>
 
 
-<!-- Seção Sobre Mim -->
-<section id="about" class="mt-8">
-    <h5 class="text-sm font-semibold text-gray-400 mb-2 mt-8 text-center">Saiba mais</h5> <!-- Centralizando o título -->
-    <h1 class="text-4xl font-bold mb-6 text-center">Sobre Mim</h1>
-    <div class="container mx-auto max-w-7xl"> <!-- Adicionando classes para centralizar -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <!-- Seção Sobre Mim -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden story-section">
-                <img src="./Imagem_do_WhatsApp_de_2023-12-20_as_00.39.17_1f5c34e2.png" alt="Foto de Perfil"
-                    class="w-full h-56 object-cover object-center">
-                <div class="p-6 flex flex-col items-center">
-                    <h3 class="text-xl font-bold mb-2">Leonardo Lazzareschi</h3>
-                    <p class="section__text__p2">Frontend Developer</p>
-                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-                    <script>
-                        var typingEffect = new Typed('.section__text__p2', {
-                            strings: [
-                                "Desenvolvedor de Softwares",
-                                "Designer Web",
-                            ],
-                            typeSpeed: 75,
-                            backSpeed: 110,
-                            loop: true
-                        });
-                    </script>
-                    <p class="text-gray-700 mt-4 text-center">Olá, sou Leonardo Lazzareschi, um desenvolvedor apaixonado por <strong>programação avançada</strong>, com base aqui em <strong>São Paulo, Brasil</strong>. Desde que mergulhei no mundo da tecnologia, tenho buscado constantemente desafios que me permitam expandir meu conhecimento e habilidades. Com uma mente inquisitiva e determinada, estou sempre em busca de soluções inovadoras para os problemas mais complexos. São Paulo, com sua <strong>vibrante cena de tecnologia</strong>, oferece um ambiente inspirador.
+        <div class="container mx-auto mt-8 max-w-7xl">
+            <!-- Seções Sobre Mim e Minha História -->
+            <section id="about" class="mt-8 text-center">
+                <h5 class="text-sm font-semibold text-gray-400 mb-2 mt-8">Saiba mais</h5> <!-- Centralizando o título -->
+                <h1 class="text-4xl font-bold mb-6">Sobre Mim</h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Seção Sobre Mim -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden story-section">
+                        <img src="./Imagem_do_WhatsApp_de_2023-12-20_as_00.39.17_1f5c34e2.png" alt="Foto de Perfil"
+                            class="w-full h-56 object-cover object-center">
+                        <div class="p-6 flex flex-col items-center">
+                            <h3 class="text-xl font-bold mb-2">Leonardo Lazzareschi</h3>
+                            <p class="section__text__p2">Frontend Developer</p>
+                            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                            <script>
+                                var typingEffect = new Typed('.section__text__p2', {
+                                    strings: [
+                                        "Desenvolvedor de Softwares",
+                                        "Designer Web",
+                                    ],
+                                    typeSpeed: 75,
+                                    backSpeed: 110,
+                                    loop: true
+                                });
+                            </script>
+                            <p class="text-gray-700 mt-4 text-center">Olá, sou Leonardo Lazzareschi, um desenvolvedor apaixonado por <strong>programação avançada</strong>, com base aqui em <strong>São Paulo, Brasil</strong>. Desde que mergulhei no mundo da tecnologia, tenho buscado constantemente desafios que me permitam expandir meu conhecimento e habilidades. Com uma mente inquisitiva e determinada, estou sempre em busca de soluções inovadoras para os problemas mais complexos. São Paulo, com sua <strong>vibrante cena de tecnologia</strong>, oferece um ambiente inspirador.</p>
+                        </div>
+                    </div>
+                    <!-- Seção Minha História -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden story-section">
+                        <img src="./Imagem_do_WhatsApp_de_2023-12-20_as_00.39.17_1f5c34e2.png" alt="Imagem da Sua História" class="w-full h-56 object-cover object-center">
+                        <div class="p-6 flex flex-col items-center">
+                            <h3 class="text-xl font-bold mb-2">Minha História</h3>
+                            <p class="text-gray-700 mt-4 text-center">Olá, sou <strong>Leonardo Lazzareschi</strong>, um desenvolvedor apaixonado por <strong>programação avançada</strong> aqui em <strong>São Paulo, Brasil</strong>. Desde minha entrada na tecnologia, busco incessantemente desafios para expandir meus conhecimentos. Em uma jornada que começou na universidade e floresceu em uma <strong>startup inovadora</strong>, encontrei-me envolvido em um projeto ambicioso de <strong>inteligência artificial para prever desastres naturais</strong>. Com uma equipe diversificada, enfrentamos <strong>obstáculos monumentais</strong> e, após meses de trabalho árduo, nossa tecnologia foi implementada globalmente, <strong>salvando vidas</strong> e moldando meu compromisso contínuo com <strong>soluções inovadoras</strong> para os <strong>problemas mais complexos</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        
+
+<div class="container mx-auto mt-8 max-w-7xl5">
+    <!-- Seção Meus Projetos -->
+    <section class="text-center">
+        <h5 class="text-sm font-semibold text-gray-400 mb-2 mt-8">Meus Projetos</h5>
+        <h1 class="text-4xl font-bold mb-6">Projetos</h1>
+        <div class="grid gap-6 md:grid-cols-2 justify-center">
+            <!-- Cards dos projetos -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden skill-card">
+                <!-- Card do Projeto 1 -->
+                <img src="./project-1.png" alt="Projeto 1" class="w-full h-56 object-cover object-center">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">App Mensagem</h2>
+                    <p class="text-gray-700 mb-4">Aplicativo de mensagens estilo conversa, inspirado em plataformas populares. Permite troca de mensagens em tempo real, criação de grupos e compartilhamento de mídias.</p>
+                    <div id="details1" class="hidden mt-4">
+                        <p>Informações adicionais sobre o <strong>Projeto 1</strong>.</p>
+                        <p>Mais detalhes podem ser adicionados aqui.</p>
+                    </div>
                 </div>
             </div>
-           <!-- Seção Minha História -->
-<section>
-    <div class="bg-white rounded-lg shadow-md overflow-hidden story-section">
-        <img src="./Imagem_do_WhatsApp_de_2023-12-20_as_00.39.17_1f5c34e2.png" alt="Imagem da Sua História" class="w-full h-56 object-cover object-center">
-        <div class="p-6 flex flex-col items-center">
-            <h3 class="text-xl font-bold mb-2">Minha História</h3>
-            <p class="text-gray-700 mt-4 text-center">Olá, sou <strong>Leonardo Lazzareschi</strong>, um desenvolvedor apaixonado por <strong>programação avançada</strong> aqui em <strong>São Paulo, Brasil</strong>. Desde minha entrada na tecnologia, busco incessantemente desafios para expandir meus conhecimentos. Em uma jornada que começou na universidade e floresceu em uma <strong>startup inovadora</strong>, encontrei-me envolvido em um projeto ambicioso de <strong>inteligência artificial para prever desastres naturais</strong>. Com uma equipe diversificada, enfrentamos <strong>obstáculos monumentais</strong> e, após meses de trabalho árduo, nossa tecnologia foi implementada globalmente, <strong>salvando vidas</strong> e moldando meu compromisso contínuo com <strong>soluções inovadoras</strong> para os <strong>problemas mais complexos</strong>.</p>
-        </div>
-    </div>
-</section>
 
+            <!-- Card do Projeto 2 -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden skill-card">
+                <img src="./project-2.png" alt="Projeto 2" class="w-full h-56 object-cover object-center">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">WebSite de Notificações</h2>
+                    <p class="text-gray-700 mb-4">Aplicativo de gerenciamento de notificações, permite aos usuários personalizar preferências e receber alertas em tempo real sobre eventos e atualizações.</p>
+                    <div id="details2" class="hidden mt-4">
+                        <p>Informações adicionais sobre o <strong>Projeto 2</strong>.</p>
+                        <p>Mais detalhes podem ser adicionados aqui.</p>
+                    </div>
+                </div>
+            </div>
 
-<div class="container mx-auto mt-8">
-    <h5 class="text-sm font-semibold text-gray-400 mb-2 mt-8 text-center">Meus Projetos</h5> <!-- Centralizando o título -->
-    <h1 class="text-4xl font-bold mb-6 text-center">Projetos</h1>
-    <div class="grid gap-6 md:grid-cols-2">
-        <!-- Card do Projeto 1 -->
-<div class="bg-white rounded-lg shadow-xl overflow-hidden skill-card">
-    <img src="./project-1.png" alt="Projeto 1" class="w-full h-56 object-cover object-center">
-    <div class="p-6">
-        <h2 class="text-xl font-bold mb-2">App Mensagem</h2>
-        <p class="text-gray-700 mb-4">Aplicativo de mensagens estilo conversa, inspirado em plataformas populares. Permite troca de mensagens em tempo real, criação de grupos e compartilhamento de mídias.</p>
-        <div id="details1" class="hidden mt-4">
-            <p>Informações adicionais sobre o <strong>Projeto 1</strong>.</p>
-            <p>Mais detalhes podem ser adicionados aqui.</p>
+            <!-- Card do Projeto 3 -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden skill-card">
+                <img src="./project-3.png" alt="Projeto 3" class="w-full h-56 object-cover object-center">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">WebSite de Gastronomia</h2>
+                    <p class="text-gray-700 mb-4">Plataforma de avaliação online, permite criação e administração de questionários personalizados, com análise de dados avançada.</p>
+                    <div id="details3" class="hidden mt-4">
+                        <p>Informações adicionais sobre o <strong>Projeto 3</strong>.</p>
+                        <p>Mais detalhes podem ser adicionados aqui.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card do Projeto 4 -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden skill-card">
+                <img src="./15-doka-comunicacao-criacao-site-profissional-desenvolvimento.png" alt="Projeto 4" class="w-full h-56 object-cover object-center">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">App Personalizado</h2>
+                    <p class="text-gray-700 mb-4">Aplicação versátil que combina funcionalidades de agenda e editor de vídeo, oferecendo uma solução completa para organização pessoal e produção de conteúdo digital.</p>
+                    <div id="details4" class="hidden mt-4">
+                        <p>Informações adicionais sobre o <strong>Projeto 4</strong>.</p>
+                        <p>Mais detalhes podem ser adicionados aqui.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 </div>
 
-        <!-- Card do Projeto 2 -->
-        <div class="bg-white rounded-lg shadow-xl overflow-hidden skill-card">
-            <img src="./project-2.png" alt="Projeto 2" class="w-full h-56 object-cover object-center">
-            <div class="p-6">
-                <h2 class="text-xl font-bold mb-2">WebSite de Notificações</h2>
-                <p class="text-gray-700 mb-4">Aplicativo de gerenciamento de notificações, permite aos usuários personalizar preferências e receber alertas em tempo real sobre eventos e atualizações.</p>
-                <div id="details2" class="hidden mt-4">
-                    <p>Informações adicionais sobre o <strong>Projeto 2</strong>.</p>
-                    <p>Mais detalhes podem ser adicionados aqui.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Card do Projeto 3 -->
-        <div class="bg-white rounded-lg shadow-xl overflow-hidden skill-card">
-            <img src="./project-3.png" alt="Projeto 3" class="w-full h-56 object-cover object-center">
-            <div class="p-6">
-                <h2 class="text-xl font-bold mb-2">WebSite de Gastronomia</h2>
-                <p class="text-gray-700 mb-4">Plataforma de avaliação online, permite criação e administração de questionários personalizados, com análise de dados avançada.</p>
-                <div id="details3" class="hidden mt-4">
-                    <p>Informações adicionais sobre o <strong>Projeto 3</strong>.</p>
-                    <p>Mais detalhes podem ser adicionados aqui.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Card do Projeto 4 -->
-        <div class="bg-white rounded-lg shadow-xl overflow-hidden skill-card">
-            <img src="./15-doka-comunicacao-criacao-site-profissional-desenvolvimento.png" alt="Projeto 4" class="w-full h-56 object-cover object-center">
-            <div class="p-6">
-                <h2 class="text-xl font-bold mb-2">App Personalizado</h2>
-                <p class="text-gray-700 mb-4">Aplicação versátil que combina funcionalidades de agenda e editor de vídeo, oferecendo uma solução completa para organização pessoal e produção de conteúdo digital.</p>
-                <div id="details4" class="hidden mt-4">
-                    <p>Informações adicionais sobre o <strong>Projeto 4</strong>.</p>
-                    <p>Mais detalhes podem ser adicionados aqui.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Adicione mais cards conforme necessário -->
-    </div>
-</div>    
+<div class="container mx-auto mt-10 max-w-6xl5">
+    <!-- Seção de Habilidades -->
+    <section id="skills" class="mt-8 text-center">
+        <h5 class="text-sm font-semibold text-gray-400 mb-2 mt-8">Meu Portfólio</h5>
+        <h1 class="text-4xl font-bold mb-6">Habilidades</h1>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 justify-center">
+            <!-- Cards de habilidades -->
+            <!-- Card de Habilidade: HTML -->
+            <li class="bg-white rounded-lg shadow-x3 overflow-hidden skill-card">
+                <!-- Conteúdo do elemento -->
+                <i class="fab fa-html5 text-5xl text-red-600 mb-2"></i>
+                <h3 class="text-gray-700 font-bold text-xl mb-2">HTML</h3>
+                <p class="text-gray-500">Experiente - <span class="percentage experienced">90%</span></p>
+                <p class="text-gray-700 mt-2">Domínio avançado de HTML5, incluindo semântica, formulários, e APIs.
+                </p>
+                <p class="text-gray-700">Exemplos de projetos: Site pessoal, Landing Pages, Aplicações Web.</p>
+            </li>
+            <!-- Card de Habilidade: CSS -->
+            <li class="bg-white rounded-lg shadow-x3 overflow-hidden skill-card">
+                <i class="fab fa-css3-alt text-5xl text-blue-600 mb-2"></i>
+                <h3 class="text-gray-700 font-bold text-xl mb-2">CSS</h3>
+                <p class="text-gray-500">Intermediário - <span class="percentage intermediate">70%</span></p>
+                <p class="text-gray-700 mt-2">Conhecimento sólido em estilização e layout com CSS3 e preprocessadores
+                    como SASS.</p>
+                <p class="text-gray-700">Exemplos de projetos: Páginas responsivas, Estilização avançada, Animações
+                    CSS.</p>
+            </li>
+            <!-- Card de Habilidade: JavaScript -->
+            <li class="bg-white rounded-lg shadow-x3 overflow-hidden skill-card">
+                <i class="fab fa-js text-5xl text-yellow-600 mb-2"></i>
+                <h3 class="text-gray-700 font-bold text-xl mb-2">JavaScript</h3>
+                <p class="text-gray-500">Experiente - <span class="percentage experienced">85%</span></p>
+                <p class="text-gray-700 mt-2">Ampla experiência em desenvolvimento frontend e backend com JavaScript,
+                    incluindo frameworks como React e Node.js.</p>
+                <p class="text-gray-700">Exemplos de projetos: Single Page Applications, Aplicações Web em Tempo
+                    Real, APIs RESTful.</p>
+            </li>
+            <!-- Card de Habilidade: React -->
+            <li class="bg-white rounded-lg shadow-x3 overflow-hidden skill-card">
+                <i class="fab fa-react text-5xl text-blue-400 mb-2"></i>
+                <h3 class="text-gray-700 font-bold text-xl mb-2">React</h3>
+                <p class="text-gray-500">Avançado - <span class="percentage experienced">80%</span></p>
+                <p class="text-gray-700 mt-2">Experiência significativa no desenvolvimento de aplicações web
+                    utilizando React.js.</p>
+                <p class="text-gray-700">Exemplos de projetos: Aplicações SPA complexas, Componentes reutilizáveis,
+                    Integração com APIs externas.</p>
+            </li>
+            <!-- Card de Habilidade: Tailwind CSS -->
+            <li class="bg-white rounded-lg shadow-x3 overflow-hidden skill-card">
+                <i class="fab fa-css3 text-5xl text-blue-400 mb-2"></i>
+                <h3 class="text-gray-700 font-bold text-xl mb-2">Tailwind CSS</h3>
+                <p class="text-gray-500">Avançado - <span class="percentage experienced">85%</span></p>
+                <p class="text-gray-700 mt-2">Proficiente no uso e personalização do Tailwind CSS para estilizar
+                    aplicações web.</p>
+                <p class="text-gray-700">Exemplos de projetos: Sites responsivos, Interfaces de usuário modernas,
+                    Prototipagem rápida.</p>
+            </li>
+            <!-- Card de Habilidade: Bootstrap -->
+            <li class="bg-white rounded-lg shadow-x3 overflow-hidden skill-card">
+                <i class="fab fa-bootstrap text-5xl text-purple-600 mb-2"></i>
+                <h3 class="text-gray-700 font-bold text-xl mb-2">Bootstrap</h3>
+                <p class="text-gray-500">Intermediário - <span class="percentage intermediate">55%</span></p>
+                <p class="text-gray-700 mt-2">Conhecimento em usar Bootstrap para criar interfaces web
+                    responsivas.</p>
+                <p class="text-gray-700">Exemplos de projetos: Sites corporativos, Dashboards administrativos,
+                    Aplicações web rápidas.</p>
+            </li>
+        </ul>
+    </section>
+</div>
 
-        <!-- Seção de Habilidades -->
-        <section id="skills" class="mt-8">
-            <h5 class="text-sm font-semibold text-gray-400 mb-2 mt-8 text-center">Meu Portfólio</h5> <!-- Centralizando o título -->
-            <h1 class="text-4xl font-bold mb-6 text-center">Habilidades</h1>
-            <ul class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <!-- Card de Habilidade: HTML -->
-                <li class="skill-card rounded shadow-md p-4 animate__animated transition duration-500 ease-in-out" style="transition-duration: 1s;">
-                    <!-- Conteúdo do elemento -->
-                    <i class="fab fa-html5 text-5xl text-red-600 mb-2"></i>
-                    <h3 class="text-gray-700 font-bold text-xl mb-2">HTML</h3>
-                    <p class="text-gray-500">Experiente - <span class="percentage experienced">90%</span></p>
-                    <p class="text-gray-700 mt-2">Domínio avançado de HTML5, incluindo semântica, formulários, e APIs.
-                    </p>
-                    <p class="text-gray-700">Exemplos de projetos: Site pessoal, Landing Pages, Aplicações Web.</p>
-                </li>
-                <!-- Card de Habilidade: CSS -->
-                <li class="skill-card rounded shadow-md p-4 animate__animated transition duration-500 ease-in-out" style="transition-duration: 1s;">                    <i class="fab fa-css3-alt text-5xl text-blue-600 mb-2"></i>
-                    <h3 class="text-gray-700 font-bold text-xl mb-2">CSS</h3>
-                    <p class="text-gray-500">Intermediário - <span class="percentage intermediate">70%</span></p>
-                    <p class="text-gray-700 mt-2">Conhecimento sólido em estilização e layout com CSS3 e preprocessadores
-                        como SASS.</p>
-                    <p class="text-gray-700">Exemplos de projetos: Páginas responsivas, Estilização avançada, Animações
-                        CSS.</p>
-                </li>
-                <!-- Card de Habilidade: JavaScript -->
-                <li class="skill-card rounded shadow-md p-4 animate__animated transition duration-500 ease-in-out" style="transition-duration: 1s;">                    <i class="fab fa-js text-5xl text-yellow-600 mb-2"></i>
-                    <h3 class="text-gray-700 font-bold text-xl mb-2">JavaScript</h3>
-                    <p class="text-gray-500">Experiente - <span class="percentage experienced">85%</span></p>
-                    <p class="text-gray-700 mt-2">Ampla experiência em desenvolvimento frontend e backend com JavaScript,
-                        incluindo frameworks como React e Node.js.</p>
-                    <p class="text-gray-700">Exemplos de projetos: Single Page Applications, Aplicações Web em Tempo
-                        Real, APIs RESTful.</p>
-                </li>
-                <!-- Card de Habilidade: React -->
-                <li class="skill-card rounded shadow-md p-4 animate__animated transition duration-500 ease-in-out" style="transition-duration: 1s;">                    <i class="fab fa-react text-5xl text-blue-400 mb-2"></i>
-                    <h3 class="text-gray-700 font-bold text-xl mb-2">React</h3>
-                    <p class="text-gray-500">Avançado - <span class="percentage experienced">80%</span></p>
-                    <p class="text-gray-700 mt-2">Experiência significativa no desenvolvimento de aplicações web
-                        utilizando React.js.</p>
-                    <p class="text-gray-700">Exemplos de projetos: Aplicações SPA complexas, Componentes reutilizáveis,
-                        Integração com APIs externas.</p>
-                </li>
-                <!-- Card de Habilidade: Tailwind CSS -->
-                <li class="skill-card rounded shadow-md p-4 animate__animated transition duration-500 ease-in-out" style="transition-duration: 1s;">                    <i class="fab fa-css3 text-5xl text-blue-400 mb-2"></i>
-                    <h3 class="text-gray-700 font-bold text-xl mb-2">Tailwind CSS</h3>
-                    <p class="text-gray-500">Avançado - <span class="percentage experienced">85%</span></p>
-                    <p class="text-gray-700 mt-2">Proficiente no uso e personalização do Tailwind CSS para estilizar
-                        aplicações web.</p>
-                    <p class="text-gray-700">Exemplos de projetos: Sites responsivos, Interfaces de usuário modernas,
-                        Prototipagem rápida.</p>
-                </li>
-                <!-- Card de Habilidade: Bootstrap -->
-                <li class="skill-card rounded shadow-md p-4 animate__animated transition duration-500 ease-in-out" style="transition-duration: 1s;">                    <i class="fab fa-bootstrap text-5xl text-purple-600 mb-2"></i>
-                    <h3 class="text-gray-700 font-bold text-xl mb-2">Bootstrap</h3>
-                    <p class="text-gray-500">Intermediário - <span class="percentage intermediate">55%</span></p>
-                    <p class="text-gray-700 mt-2">Conhecimento em usar Bootstrap para criar interfaces web
-                        responsivas.</p>
-                    <p class="text-gray-700">Exemplos de projetos: Sites corporativos, Dashboards administrativos,
-                        Aplicações web rápidas.</p>
-                </li>
-            </ul>
-        </section>
-    </main>
 
  
     <div class="container mx-auto mt-8">
